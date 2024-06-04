@@ -7,7 +7,7 @@ const searchBox = document.querySelector(".search input");
         
         async function checkWeather(cityname){
             const response = await fetch(apiUrl + cityname + `&appid=${apiKey}`);
-            var data = await response.json();z
+            var data = await response.json();
             console.log(data);
 
             if(response.status == 404){
